@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 74: expected ':' not found.
+    else d <=15:
+         ^
+
+File "game/script.rpy", line 78: expected statement.
+    else d > 15:
+           ^
+
+Ren'Py Version: Ren'Py 7.3.2.320
+Fri Sep 27 14:42:41 2019
