@@ -1,24 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 67, in script
-    if d = 1:
-SyntaxError: invalid syntax (game/script.rpy, line 67)
+  File "game/script.rpy", line 66, in script
+    $ player_name == null
+  File "game/script.rpy", line 66, in <module>
+    $ player_name == null
+NameError: name 'null' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 67, in script
-    if d = 1:
-  File "C:\Program Files (x86)\renpy-7.3.2-sdk\renpy\ast.py", line 1830, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Program Files (x86)\renpy-7.3.2-sdk\renpy\python.py", line 2033, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Program Files (x86)\renpy-7.3.2-sdk\renpy\python.py", line 690, in py_compile
-    raise e
-SyntaxError: invalid syntax (game/script.rpy, line 67)
+  File "game/script.rpy", line 66, in script
+    $ player_name == null
+  File "C:\Program Files (x86)\renpy-7.3.2-sdk\renpy\ast.py", line 912, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Program Files (x86)\renpy-7.3.2-sdk\renpy\python.py", line 2004, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 66, in <module>
+    $ player_name == null
+NameError: name 'null' is not defined
 
 Windows-7-6.1.7601-SP1
 Ren'Py 7.3.2.320
 Huevoshi 1.0
-Fri Sep 27 14:37:02 2019
+Fri Oct 04 09:38:35 2019
